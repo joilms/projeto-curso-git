@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Curso de Git e GitHub</title>
+</head>
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; height: 100%; margin: 0; padding: 0; background-color: #e4e4e4;">
+	<center>
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; height: 100%; margin: 0; padding: 0; background-color: #e4e4e4;">
+			<tr>
+				<td align="center" valign="top" id="bodyCell" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; height: 100%; margin: 0; padding: 0; border-top: 0;">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+						
+						<tr>
+							<td align="center" valign="top" class="section1Column" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: transparent; border-top: 0; border-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+								<!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px" class="sectionContainerIE"> <tr> <td valign="top" align="center" width="600" style="width:600px;"><![endif]-->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="sectionContainer" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width:100%; max-width: 600px !important; background-color: #FFFFFF;">
+									<tr>
+										<td valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+											<table class="columnContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="center" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;"> <img src="C:\Users\JoilsonMoraes\projeto-curso-git\github-logo.png" alt="Correio" width="600" border="0" style="-ms-interpolation-mode:bicubic; border:0; line-height:100%; outline:none; display: block; max-width: 600px; height: auto;" class="img-max" /> </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" class="section1Column" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: transparent; border-top: 0; border-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+								<!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px" class="sectionContainerIE"> <tr> <td valign="top" align="center" width="600" style="width:600px;"><![endif]-->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="sectionContainer" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width:100%; max-width: 600px !important; background-color: #f2f3f6;">
+									<tr>
+										<td valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+											<table class="columnContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="left" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size: 16px; line-height: 150%; font-family: Prelo-Book, Roboto; color: #666666; padding: 9px 50px; word-break: break-word !important;" class="padding">
+																	<p style="line-height: 1.2;"><span style="font-size: 20px; font-family: Prelo-Book, Roboto;">Aprenda Git e GitHub sem qualquer código!</span></p>
+																	<p style="line-height: 1.2;"><span style="font-size: 16px; font-family: Prelo-Book, Roboto; ">
+
+Usando o guia Hello World, você criará um repositório, iniciará um ramo, escreverá comentários e abrirá uma solicitação de atração. <br><br>
+Descubra projetos e pessoas interessantes para preencher seu feed de notícias pessoais. <br><br>
+
+Atenciosamente, <br>
+Gerente Mercado Leitor<br>
+</a></span></p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<tr>
+								<table align="center" style="height: 5px; background-color:#ffffff" width="600">
+									<tbody>
+										<tr style="height: 4px;">
+											<td style="width: 598px; height: 4px;"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</tr>
+						</tr>
+
+						<tr>
+							<td align="center" valign="top" class="section1Column" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: transparent; border-top: 0; border-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+								<!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px" class="sectionContainerIE"> <tr> <td valign="top" align="center" width="600" style="width:600px;"><![endif]-->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="sectionContainer" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width:100%; max-width: 600px !important; background-color: #edeff1;">
+									<tr>
+										<td valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+											<!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"> <tr> <td align="center" valign="top" width="300" style="width:300px;"><![endif]-->
+											<table class="columnContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="320" style="width: 320px; border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="left" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size: 16px; line-height: 150%; font-family: Prelo-Book, Roboto; color: #666666; padding-left: 50px; padding-top: 30px; word-break: break-word !important;" class="padding">
+																	<p style="margin:0;"><span style="line-height: 1.2;color: #000000;"><strong>NEWSLETTER</strong><br /></span></p>
+																	<p style="line-height: 1.2;margin:0; padding-bottom:5px;"><span style="font-size: 14px;">Seu feed de notícias ajuda você a acompanhar as atividades recentes em repositórios que você assiste e pessoas que você segue.<br><br></span></p>
+																</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0" width="100%" class="componentContainerButton" style="background-color: transparent; min-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+															<tbody>
+																<tr>
+																	<td style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top" align="center" class="componentContainerCellButton">
+																		<table border="0" cellpadding="0" cellspacing="0" class="componentBlockButton" style="border-collapse: separate !important; border: 0px none #000000; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+																			<tbody>
+																				<tr>
+																					<td align="center" width="200" valign="middle" class="componentBlockCellButton" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;background-color: #008787;padding: 10px;">
+																						<a class="componentButton" title="" href="https://github.com/explore" target="_blank" style="letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; text-align: center; text-decoration: none; color: #FFFFFF; mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; display: block; word-break: break-word !important;"> <strong>Explorar o GitHub</strong> </a>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--[if (gte mso 9)|(IE)]></td> <td align="center" valign="top" width="300" style="width:300px;"><![endif]-->
+											<table class="columnContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="280" style="width:280px; border-collapse:collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="right" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;"> <img src="https://campanhas.correio24h.com.br/emails/esqueceu-de-mim/imagem3.jpg" alt="" width="280" border="0" style="-ms-interpolation-mode:bicubic; border:0; line-height:100%; outline:none; display: block; max-width: 280px; height: auto;" class="img-max" /> </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<tr>
+								<table align="center" style="height: 5px; background-color:#ffffff" width="600">
+									<tbody>
+										<tr style="height: 4px;">
+											<td style="width: 598px; height: 4px;"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</tr>
+						</tr>
+
+							<!-- Espaço -->
+						</tr>
+
+						<tr>
+							<td align="center" valign="top" id="section3Columns" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: transparent; border-top: 0px; border-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+								<!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" class="sectionContainerIE" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;"> <tr> <td valign="top" align="center" width="600" style="width:600px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><![endif]-->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="sectionContainer" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width:100%; max-width: 600px !important; background-color: #eeeeee;">
+									<tr>
+										<td valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+											<!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"> <tr> <td align="center" valign="top" width="200" style="width:200px;"><![endif]-->
+											<table align="left" border="0" cellpadding="0" cellspacing="0" width="82" class="columnContainer" style="width:82px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="left" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;"> <img src="C:\Users\JoilsonMoraes\projeto-curso-git\github_PNG40.png" alt="" width="82" border="0" style="margin:10px 0px 0px 0px;-ms-interpolation-mode:bicubic; border:0; line-height:100%; outline:none; display: block; max-width: 82px; height: auto;" class="img-max" /> </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--[if (gte mso 9)|(IE)]></td> <td align="center" valign="top" width="200" style="width:200px;"><![endif]-->
+											<table align="left" border="0" cellpadding="0" cellspacing="0" width="444" class="columnContainer" style="width:444px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<td bgcolor="transparent" align="left" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size: 16px; line-height: 150%; font-family: Prelo-Book, Roboto; color: #666666; padding-left:9px; word-break: break-word !important;" class="padding">
+																	<p style="margin:0;line-height: 1.2; font-family: Prelo-Book, Roboto;font-size: 16px;margin-top: 20px;color: #474445">Caso tenha dificuldades, saiba que estamos sempre disponíveis para te ajudar: <a target="_blank" href="https://help.github.com/pt">Chat Online</a> </p>
+																	<p style="margin:0;line-height: 1.2; font-family: Prelo-Book, Roboto;font-size: 16px;margin-top: 20px;color: #474445">Queremos lhe oferecer a melhor experiência e lhe deixar bem informado todos os dias.</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--[if (gte mso 9)|(IE)]></td> <td align="center" valign="top" width="200" style="width:200px;"><![endif]-->
+											<table align="left" border="0" cellpadding="0" cellspacing="0" width="74" class="columnContainer" style="width:74px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<tr>
+													<td class="columnContainerCell" valign="top" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;">
+															<tr>
+																<!--td bgcolor="transparent" align="right" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;"> <img src="C:\Users\JoilsonMoraes\projeto-curso-git\vector.png" alt="" width="74" border="0" style="-ms-interpolation-mode:bicubic; border:0; line-height:100%; outline:none; display: block; max-width: 74px; height: auto;" class="img-max" /--> </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<tr>
+								<table align="center" style="height: 5px; background-color:#ffffff" width="600">
+									<tbody>
+										<tr style="height: 4px;">
+											<td style="width: 598px; height: 4px;"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</tr>
+						</tr>
+						<tr>
+							<td align="center" valign="top" class="section1Column" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: transparent; border-top: 0; border-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+								<!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px" class="sectionContainerIE"> <tr> <td valign="top" align="center" width="600" style="width:600px;"><![endif]-->
+								<table class="sectionContainer" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width:100%; max-width: 600px !important; background-color: #e6e6e6;" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top">
+												<table class="columnContainer" style="width:600px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td class="columnContainerCell" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;" valign="top">
+																<table style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;" width="100%" cellspacing="0" cellpadding="0" border="0">
+																	<tbody>
+																		<tr>
+																			<td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size: 16px; line-height: 150%; font-family: Prelo-Book, Roboto; color: #666666; padding: 18px 18px 0px 18px; word-break: break-word !important;" bgcolor="transparent" align="center">
+																				<img src="C:\Users\JoilsonMoraes\projeto-curso-git\github-logo.png"  alt="Correio" width="600" border="0" style="-ms-interpolation-mode:bicubic; border:0; line-height:100%; outline:none; display: block; max-width: 200px; height: auto;" class="img-max" />
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top">
+												<table class="columnContainer" style="width:600px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="600" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+														<tr>
+															<td class="columnContainerCell" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 110%; font-family: Prelo-Book, Roboto; color: #666666;" valign="top">
+																<table style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important;" width="100%" cellspacing="0" cellpadding="0" border="0">
+																	<tbody>
+																		<tr>
+																			<td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size: 14px; line-height: 150%; font-family: Prelo-Book, Roboto; color: #000; padding: 9px 18px; word-break: break-word !important;" bgcolor="transparent" align="left">
+																				<p style="text-align: center; line-height: 1.2;margin: 0;"><strong style="font-size: 16px;">Central de Relacionamento</strong> <br /><a target="_blank" href="https://github.com/explore">www.github.com</a> | <a href="mailto:github@github.com">github@github.com</a><br />Capital e Região Metropolitana: (71) 9999-9999<br />Interior do Estado: 0800-999-9999<br />2ª a 6ª feira de 7h às 19h20 | sábado de 7h às 12h.<br /><a target="_blank" href="https://help.github.com/pt">Chat Online</a></p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" style="mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top">
+												<table style="max-width: 600px;width: 100%; margin: 0 auto;text-align: center;vertical-align: top;display: inline-block;padding-top: 10px;padding-bottom: 10px; background-color:#e6e6e6">
+													<tbody style="display: inline-block;margin: 0;padding: 0;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+														<tr style="display: inline-block;margin: 0;padding: 0;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+															<td style="display: inline-block;margin: 0;padding: 10px;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+																<a href="https://pt-br.facebook.com/github/">
+														<img src="https://campanhas.correio24h.com.br/emails/esqueceu-de-mim/facebook.png" alt="Facebook Correio" width="30" />
+													</a>
+															</td>
+															<td style="display: inline-block;margin: 0;padding: 10px;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+																<a href="https://www.instagram.com/github/">
+														<img src="https://campanhas.correio24h.com.br/emails/esqueceu-de-mim/instagram.png" alt="Instagram Correio" width="30" />
+													</a>
+															</td>
+															<td style="display: inline-block;margin: 0;padding: 10px;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+																<a href="https://twitter.com/github">
+														<img src="https://campanhas.correio24h.com.br/emails/esqueceu-de-mim/twitter.png" alt="Twitter Correio" width="30" />
+													</a>
+															</td>
+															<td style="display: inline-block;margin: 0;padding: 10px;font-family: Prelo-Book, Roboto;color: #fff;text-align: center;">
+																<a href="https://www.youtube.com/user/github">
+														<img src="https://campanhas.correio24h.com.br/emails/esqueceu-de-mim/youtube.png" alt="YouTube Correio" width="30" />
+													</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+								<!--[if (gte mso 9)|(IE)]></td> </tr> </table><![endif]-->
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+    </center>
+</body>
+</html>
